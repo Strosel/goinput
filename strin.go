@@ -11,7 +11,7 @@ func Strin(mess string) string {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print(mess)
 	text, _ := reader.ReadString('\n')
-	if len(text) < 1 {
+	if len(text) < 2 {
 		return ""
 	} else if text[len(text)-2] == '\r' {
 		return text[:len(text)-2]
